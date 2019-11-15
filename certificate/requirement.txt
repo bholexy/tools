@@ -1,0 +1,5 @@
+weasyprint
+yagmail
+mysql-connector-python
+wand
+pillow

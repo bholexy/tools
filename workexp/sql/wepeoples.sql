@@ -1,0 +1,1 @@
+CREATE TABLE wepeoples (id int NOT NULL AUTO_INCREMENT, first_name VARCHAR(20), last_name VARCHAR(20), email VARCHAR(20), trainee_position VARCHAR(20), current_position VARCHAR(20), state VARCHAR(20), income VARCHAR(20), relocation CHAR(1), last_verification DATE,  start_date DATE, graduation_date DATE, type VARCHAR(20), primary key (id));

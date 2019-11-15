@@ -1,0 +1,12 @@
+# copy resumes from here to s3 bucket
+* * * * * /bin/bash -c "/opt/scripts/s3_sync_media_files.sh assets.prod.linuxjobber.com"
+
+#tools automation
+15 8 * * * /tools/tool/reports/cron/daily.sh
+
+15 8 * * 2 /tools/tool/reports/cron/weekly.sh
+
+1 0 * * * "cd /tools/tool/CS && /usr/bin/python3.6 ClearDT.py" > /tmp/TFTreturn.log
+
+1 0 * * * "cd /mnt sudo ./backup_linux.sh >> /tmp/backups.log"
+
